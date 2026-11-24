@@ -1,0 +1,15 @@
+:root {
+  --background: #05080c;
+  --foreground: #e6f1f4;
+  --font-geist-sans: Arial, Helvetica, sans-serif;
+  --font-geist-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--background); color: var(--foreground); font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif; }
+button { cursor: pointer; }
+
+/* The site-wide feedback button does not exist here; keep the selector harmless. */
+body:has(.sentinel-shell) button[aria-label="Report bugs"] { display: none !important; }
+
+/* The Sentinel console uses plain scoped classes with an sn- prefix. */

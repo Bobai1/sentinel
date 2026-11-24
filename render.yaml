@@ -1,0 +1,38 @@
+services:
+  # This is the entire Sentinel deployment. It has no dependency on HelloPanda.
+  - type: web
+    name: sentinel
+    runtime: docker
+    plan: starter
+    region: frankfurt
+    healthCheckPath: /sentinel
+    disk:
+      name: sentinel-data
+      mountPath: /app/data
+      sizeGB: 1
+    envVars:
+      # Empty means public demo. Set a value to require a password.
+      - key: SENTINEL_API_TOKEN
+        value: ""
+      - key: SENTINEL_DETECTOR
+        value: "1"
+      - key: SENTINEL_RPC_URL
+        value: https://ethereum-rpc.publicnode.com
+      - key: SENTINEL_POLL_MS
+        value: "12000"
+      - key: SENTINEL_MIN_ETH
+        value: "10"
+      - key: SENTINEL_TRACE
+        value: "1"
+      - key: SENTINEL_WATCHED_ADDRESSES
+        value: ""
+      - key: SENTINEL_KYC_ENDPOINTS
+        value: ""
+      - key: SENTINEL_TRON
+        value: "1"
+      - key: SENTINEL_TRON_POLL_MS
+        value: "15000"
+      - key: SENTINEL_TRON_WATCHED_ADDRESSES
+        value: ""
+      - key: SENTINEL_TRON_KYC_ENDPOINTS
+        value: ""
