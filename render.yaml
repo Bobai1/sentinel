@@ -27,12 +27,12 @@ services:
       - key: SENTINEL_WATCHED_ADDRESSES
         value: ""
       - key: SENTINEL_KYC_ENDPOINTS
-        value: ""
+        value: "0x05CdB1526F6e224e02919a4C018D9784Ea25eb3d:VALR,0x28C6c06298d514Db089934071355E5743bf21d60:Binance 14,0xF977814e90dA44bFA03b6295A0616a897441aceC:Binance 20,0x77134cbC06cB00b66F4c7e623D5fdBF6777635EC:Bitfinex,0xf30ba13e4b04Ce5dC4D254Ae5FA95477800F0EB0:Kraken,0x4b4e14a3773ee558b6597070797fd51eb48606e5:OKX,0xf89d7b9c864f589bbf53a82105107622B35EaA40:Bybit,0xa9d1e08c7793af67e9d92fe308d5697fb81d3e43:Coinbase"
       - key: SENTINEL_TRON
         value: "1"
       - key: SENTINEL_TRON_POLL_MS
         value: "15000"
       - key: SENTINEL_TRON_WATCHED_ADDRESSES
-        value: ""
+        value: "THAW7i2vD7pPshKJJkB8QC3d41dH3zH1Na"
       - key: SENTINEL_TRON_KYC_ENDPOINTS
-        value: ""
+        value: "TAUN6FwrnwwmaEqYcckffC7wYmbaS6cBiX:Binance-Hot 1,TNXoiAJ3dct8Fjg4M9fkLFh9S2v9TXc32G:Binance-Hot 4,TDqSquXBgUCLYvYC4XZgrprLK589dkhSCf:Binance-Hot 7,TG2CMGxnTPgQ6V58kiKd7wbyN8ewtAmY76:Kraken,TU4vEruvZwLLkSfV9bNw12EJTPvNr7Pvaa:Bybit,TLaGjwhvA8XQYSxFAcAXy7Dvuue9eGYitv:OKX"
